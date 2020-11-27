@@ -51,10 +51,6 @@
     display: block; /*SHOW*/
 }
 
-.figure:hover .dd_content  {
-    display: block;
-}
-
 .figure:hover .figure_dropdown {
     background-color:  #e9345f;
     text-decoration: underline;
@@ -91,7 +87,6 @@
     height: 25%;
     display: inline-block;
     text-align: center;
-    margin-top: 7px;
 }
 /* button for dropdown */
 .gundam_dropdown {
@@ -149,7 +144,6 @@
     height: 25%;
     display: inline-block;
     text-align: center;
-    margin-top: 7px;
 }
 /* button for dropdown */
 .nendoroid_dropdown {
