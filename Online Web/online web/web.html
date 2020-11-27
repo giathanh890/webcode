@@ -3,12 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./css/1-top.css">
     <link rel="stylesheet" href="./css/1a-slideshow.css">
+    <link rel="stylesheet" href="./css/1b-login.css">
+    <link rel="stylesheet" href="./css/1c-middle.css">
     <link rel="stylesheet" href="./css/2-body.css">
     <link rel="stylesheet" href="./css/2a-product_container.css">
     <link rel="stylesheet" href="./css/2b-dropdown.css">
+    <link rel="stylesheet" href="./css/2c-nextpage.css">
     <link rel="stylesheet" href="./css/3-footer.css">
+    <link rel="stylesheet" href="./css/3a-mediaicon.css">
     <title>Nendoroid Shop</title>
 </head>
 <body>
@@ -23,9 +28,17 @@
                     <a href="">NEWS</a>
                     <a href="">SHOPPING</a>
                 </div>
-                <div class="login">
+                <div class="login_container">
                     <input type="text" placeholder="Tìm Kiếm">
-                    <a href="">LOGIN</a>
+                    <div class="loginbtn">
+                        <button onclick="Login()">LOGIN</button>
+                            <div id="loginbutton" class="logininfo">
+                                <label>Username:</label>
+                                <input type="text">
+                                <label>Password:</label>
+                                <input type="text">
+                            </div>
+                    </div>
                     <a href="">REGISTER</a>
                 </div>
             </nav>
@@ -42,6 +55,11 @@
 
             </div>
         </div>
+
+        <div class="middle">
+
+        </div>
+
         <div class="body">
             <div class="selectbar">
                 <div class="dropdown">
@@ -167,28 +185,93 @@
                                 <p>Miyuki Shirogane</p>
                                 <p style="color: red;">Giá:1.620.000đ </p>
                     </div>
+
+                    <div class="border">
+                        <a href=""><img src="picture/m.jpg" alt=""></a>
+                            <h4>Fate/Grand Order</h4>
+                                <p>Bedivere</p>
+                                <p style="color: red;">Giá:1.600.000đ </p>
+                    </div>
+
+                    <div class="border">
+                        <a href=""><img src="picture/n.jpg" alt=""></a>
+                            <h4>Fate/Grand Order</h4>
+                                <p>Shuten Douji</p>
+                                <p style="color: red;">Giá:1,950,000đ </p>
+                    </div>
+
+                    <div class="border">
+                        <a href=""><img src="picture/o.jpg" alt=""></a>
+                            <h4>Fate/Grand Order</h4>
+                                <p>Kingu</p>
+                                <p style="color: red;">Giá:1.500.000đ </p>
+                    </div>
+
+                    <div class="border">
+                        <a href=""><img src="picture/p.jpg" alt=""></a>
+                            <h4>Fate/Grand Order</h4>
+                                <p>Arthur Pendragon (Prototype)</p>
+                                <p style="color: red;">Giá:1,820,000đ </p>
+                    </div>
+
                 </div>
+
+                <div class="page">
+                    <a href=""><</a>
+                    <a href="">1</a>
+                    <a href="">2</a>
+                    <a href="">3</a>
+                    <a href="">4</a>
+                    <a href="">></a>
+                </div>
+
             </div>
+
         </div>
 
-    
-        <div class="footer">
-            <div>
-                <h2>MindX</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti asperiores blanditiis odit voluptate voluptates! Pariatur doloribus non iure minima maiores natus consequatur error, excepturi tenetur, dolores est quasi earum ea.</p>
-            </div>
-            
-            <div>
-                <h2>MindX</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias asperiores non aperiam cum neque maxime tempore, eos consequuntur ea, amet deleniti? Dignissimos natus voluptatibus sequi facilis animi, soluta cumque iure!</p>
-            </div>
+        <div class="footer_container">
+            <div class="footer">
+                <div class="footercontent">
+                    <div class="footerhead">PRODUCT</div>
+                    <div class="footerbody">
+                        <a href="">Gundam</a>
+                        <a href="">Gundam's tools</a>
+                        <a href="">Figure</a>
+                        <a href="">Nendoroid</a>
+                    </div>
+                </div>
+                
+                <div class="footercontent">
+                    <div class="footerhead">ABOUT US</div>
+                    <div class="footerbody">
+                        <a href="">About us</a>
+                    </div>
+                </div>
 
-            <div>
-                <h2>Media contact</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur veniam architecto quibusdam rerum, necessitatibus non officia. Omnis facilis, at sint doloribus dolor harum nihil ipsa cupiditate eos? Ratione, similique repellendus.</p>
+                <div class="footercontent">
+                    <div class="footerhead">CONTACT</div>
+                    <div class="footerbodyct">
+                        <p><i class="fa fa-map-marker"></i>: Mindx</p>
+                        <p><i class="fa fa-phone"></i>: 0938817420</p>
+                        <p><i class="fa fa-envelope"></i>: giathanh890@gmail.com</p>
+                    </div>
+                </div>
+
+                <div class="footercontent">
+                    <div class="footerhead">SOCIAL MEDIA</div>
+                    <div class="footerbodym">
+                        <a href=""><i class="fa fa-facebook"></i></a>
+                        <a href=""><i class="fa fa-twitter"></i></a>
+                        <a href=""><i class="fa fa-google"></i></a>
+                        <a href=""><i class="fa fa-instagram"></i></a>
+                        <a href=""><i class="fa fa-youtube"></i></a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
     <script src="./js/slideshow.js"></script>
+    <script src="./js/login.js"></script>
 </body>
 </html>
