@@ -43,7 +43,11 @@
     justify-content: center;
 }
 
-.brandimg > a >img {
+.brandimg > a > img {
     height: 140px;
+}
+
+.brandimg > a > img:hover {
+    box-shadow: 2px 2px #888888;
 }
 

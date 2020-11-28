@@ -34,6 +34,6 @@
 }
 
 .border:hover {
-    box-shadow: 3px 3px;
+    box-shadow: 3px 3px black;
     width: fit-content;
 }
